@@ -1,0 +1,20 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Image Mapping</title>
+    </head>
+    <body>
+        <img src="./NAIDOC_MAPbase.gif" alt="Australia" usemap="#cities">
+
+        <map name="cities">
+            <area shape="circle" coords="39,345,15" alt="Perth" area-data="./NAIDOC_MAP_PER.gif">
+            <area shape="circle" coords="342,393,15" alt="Adelaide" area-data="./NAIDOC_MAP_ADL.gif">
+            <area shape="circle" coords="432,452,15" alt="Melbourne" area-data="./NAIDOC_MAP_MEL.gif">
+            <area shape="circle" coords="488,399,15" alt="Canberra" area-data="./NAIDOC_MAP_CNB.gif">
+            <area shape="circle" coords="513,377,15" alt="Sydney" area-data="./NAIDOC_MAP_SYD.gif">
+            <area shape="circle" coords="536,346,15" alt="Newcastle" area-data="./NAIDOC_MAP_NCL.gif">
+            <area shape="circle" coords="536,277,15" alt="Brisbane" area-data="./NAIDOC_MAP_BNE.gif">
+        </map>
+        <script type="text/javascript">!function(){var e=document.querySelectorAll("area"),t=document.querySelector("img");e.forEach(function(e){e.addEventListener("click",function(e){t.src=this.getAttribute("area-data")})})}();</script>
+    </body>
+</html>
