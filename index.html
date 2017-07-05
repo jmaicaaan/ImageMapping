@@ -15,6 +15,17 @@
             <area shape="circle" coords="536,346,15" alt="Newcastle" area-data="https://raw.githubusercontent.com/jmaicaaan/ImageMapping/master/images/NAIDOC_MAP_NCL.GIF">
             <area shape="circle" coords="536,277,15" alt="Brisbane" area-data="https://raw.githubusercontent.com/jmaicaaan/ImageMapping/master/images/NAIDOC_MAP_BNE.GIF">
         </map>
-        <script type="text/javascript">!function(){var e=document.querySelectorAll("area"),t=document.querySelector("img");e.forEach(function(e){e.addEventListener("click",function(e){t.src=this.getAttribute("area-data")})})}();</script>
+        <script type="text/javascript">
+            (function(){
+                var areas = document.querySelectorAll('area');
+                var image = document.querySelector('img');
+                for (var i = 0; i <= areas.length - 1; i++) {
+                    areas[i].addEventListener('click', function() {
+                        image.src = this.getAttribute('area-data');
+                    });
+                }
+            })();
+        </script>
+        
     </body>
 </html>
